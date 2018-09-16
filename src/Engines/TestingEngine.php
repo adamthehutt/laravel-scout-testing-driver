@@ -124,11 +124,12 @@ class TestingEngine extends Engine
     /**
      * Map the given results to instances of the given model.
      *
+     * @param  Builder  $builder
      * @param  mixed  $results
      * @param  \Illuminate\Database\Eloquent\Model  $model
      * @return \Illuminate\Database\Eloquent\Collection
      */
-    public function map($results, $model)
+    public function map(Builder $builder, $results, $model)
     {
         if (count($results['hits']) === 0) {
             return Collection::make();
