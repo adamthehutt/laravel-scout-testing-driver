@@ -1,5 +1,5 @@
 {
-    "name": "patoui/laravel-scout-testing-driver",
+    "name": "adamthehutt/laravel-scout-testing-driver",
     "description": "In memory driver for Laravel Scout to make testing easy",
     "keywords": [
         "testing",
