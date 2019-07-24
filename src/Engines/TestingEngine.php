@@ -288,4 +288,14 @@ class TestingEngine extends Engine
             'hits' => $results
         ];
     }
+    
+    /**
+     * This is only here for compliance with the parent abstract class
+     *
+     * @param  \Illuminate\Database\Eloquent\Model  $model
+     */
+    public function flush($model)
+    {
+        return;
+    }
 }
